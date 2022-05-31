@@ -37,7 +37,7 @@
 .input, .label {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .form__wrapper {
@@ -137,7 +137,7 @@
 }
 
 .form__input_check {
-  width: 226px
+  width: 226px;
 }
 
 .form__img {
@@ -152,12 +152,12 @@
 
 /* Completed */
 .form__label_completed {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 .form__input_check {
-  display: none
+  display: none;
 }
 
 .form__input_edit {
