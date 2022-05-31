@@ -4,47 +4,59 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .logo {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .logo__img {
   width: 100%;
 }
+
 .logo__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
+
   .logo { 
     text-align: center;
   }
+
 }
+
 .form {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .input, .label {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .form__wrapper {
   display: flex;
 }
+
 .form__block {
   margin:0;
   padding: 0px;
 }
+
 .form__folder,.form__title {
   list-style:none;
 }
+
 .form__input, .form__btn{
   outline:none;
 }
+
 .form__btn {
   background: none;
   border: 0px;
@@ -54,9 +66,11 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .form__btn:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .form__title,
 .form__label_new {
@@ -68,6 +82,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .form__input_text {
   margin: 0;
   font-size: 18px;
@@ -80,6 +95,7 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .form__input_text:focus {
   color: #333;
 }
@@ -89,6 +105,7 @@
   display: block;
   margin: 0 0 20px;
 }
+
 .form__input_new {
   width: 318px;
 }
@@ -103,6 +120,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .form__folder{
   vertical-align: middle;
 }
@@ -110,20 +128,24 @@
 .form__input_checkbox {
   margin: 0 10px;
 }
+
 .form__label_check {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .form__input_check {
   width: 226px
 }
+
 .form__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .form__img:hover {
   transform: rotateZ(0);
 }
