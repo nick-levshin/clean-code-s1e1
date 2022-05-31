@@ -8,23 +8,22 @@
 
   <body class="page">
 
-    <div class="logo">
+    <section class="logo">
       <img src="./eisenhower-matrix.jpg" class="logo__img">
       <a class="logo__link" 
           href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
-    </div>
+    </section>
 
-    <div class="form">
-        
-      <p id="add-task">
+    <section class="form">
+      <div>
         <label for="new-task" class="form__label form__label_new">Add Item</label>
         <div class="form__wrapper">
           <input type="text" class="input form__input form__input_text form__input_new" id="new-task">
           <button class="form__btn">Add</button>
         </div>
-      </p>
+      </div>
 
       <h3 class="form__title" >Todo</h3>
       <ul class="form__block" id="incomplete-tasks">
@@ -57,7 +56,7 @@
           <button class="form__btn form__btn_delete"><img src="./remove.svg" class="form__img"></button>
         </li>
       </ul>
-    </div>
+    </section>
 
     <script src="app.js"></script>
   </body>
