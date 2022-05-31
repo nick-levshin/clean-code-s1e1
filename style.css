@@ -45,16 +45,16 @@
 }
 
 .form__block {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .form__folder,.form__title {
-  list-style:none;
+  list-style: none;
 }
 
 .form__input, .form__btn{
-  outline:none;
+  outline: none;
 }
 
 .form__btn {
@@ -157,13 +157,13 @@
 }
 
 .form__input_check {
-  display:none
+  display: none
 }
 
 .form__input_edit {
-  display:inline-block;
+  display: inline-block;
 }
 
 .form__label_edit {
-  display:none;
+  display: none;
 }
