@@ -131,6 +131,8 @@ var taskCompleted=function(){
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
+    var label = listItem.querySelector("label");
+    label.classList.add("form__label_completed");
 }
 
 
@@ -141,7 +143,10 @@ var taskIncomplete=function(){
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
-    bindTaskEvents(listItem,taskCompleted);
+    bindTaskEvents(listItem, taskCompleted);
+
+    var label = listItem.querySelector("label");
+    label.classList.remove("form__label_completed");
 }
 
 
@@ -166,13 +171,12 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     var editButton=taskListItem.querySelector(".form__btn_edit");
     var deleteButton=taskListItem.querySelector(".form__btn_delete");
 
-
     //Bind editTask to edit button.
     editButton.onclick=editTask;
     //Bind deleteTask to delete button.
     deleteButton.onclick=deleteTask;
     //Bind taskCompleted to checkBoxEventHandler.
-    checkBox.onchange=checkBoxEventHandler;
+    checkBox.onchange = checkBoxEventHandler;
 }
 
 //cycle over incompleteTaskHolder ul list items
@@ -180,7 +184,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
     //bind events to list items chldren(tasksCompleted)
-    bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
+    bindTaskEvents(incompleteTaskHolder.children[i], taskCompleted);
 }
 
 
