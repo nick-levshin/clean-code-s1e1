@@ -34,7 +34,8 @@
   margin: 0 auto 0;
 }
 
-.input, .label {
+.input,
+.label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -49,11 +50,13 @@
   padding: 0px;
 }
 
-.form__folder,.form__title {
+.form__folder,
+.form__title {
   list-style: none;
 }
 
-.form__input, .form__btn{
+.form__input,
+.form__btn{
   outline: none;
 }
 
@@ -115,13 +118,9 @@
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.form__folder{
   vertical-align: middle;
 }
 
