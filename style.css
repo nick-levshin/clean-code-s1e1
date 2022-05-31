@@ -137,7 +137,7 @@ ul li input[type="text"] {
   display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.editMode input[type="text"] {
   display:inline-block;
   width:224px
 }
